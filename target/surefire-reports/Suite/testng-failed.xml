@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestCases.TC001_accoountRegister">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verify_account_registration"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.TC001_accoountRegister -->
+      <class name="TestCases.TC002_loginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verify_login"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.TC002_loginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
